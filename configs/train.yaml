@@ -1,0 +1,11 @@
+
+epoch: 8000
+logging_iter: 20
+
+model:
+  architecture: "Decoder"
+
+optimizer:
+  name: "Adam"
+  lr: 0.001
+  weight_decay: 0.0001
