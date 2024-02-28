@@ -24,7 +24,7 @@ class PCGDataset(Dataset):
         self.imgemb = []
         self.txtemb = []
         self.pcg = [] 
-        self.pcg_id2pn = Dict() # pcg索引-参数名查找表 
+        self.pcg_id2pn = dict() # pcg索引-参数名查找表 
         for p in self.imgemb_paths:
             self.imgemb.append(torch.tensor(np.load(p)))
         for p in self.txtemb_paths:
