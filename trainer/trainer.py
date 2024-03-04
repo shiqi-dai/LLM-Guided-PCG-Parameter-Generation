@@ -43,7 +43,7 @@ class Trainer(object):
     def _start_of_iteration(self, data, current_iteration):
         data = to_device(data, 'cuda')
 
-        # 待写：是否需要采样辅助信息eg 相机角度、真实值
+        # 待写：是否需要采样辅助信息eg 相机···角度、真实值
 
         return {**data}
     
